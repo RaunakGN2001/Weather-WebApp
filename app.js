@@ -8,7 +8,7 @@ const updateUI = (data) => {
     const cityDetails = data.cityDetails;
     const weatherData = data.weatherDetails;
     const iconData = weatherData.WeatherIcon;
-    const path_to_icon = `../icons/${iconData}.svg`;
+    const path_to_icon = `./icons/${iconData}.svg`;
     const isDayTime = weatherData.IsDayTime;
 
 
@@ -23,10 +23,10 @@ const updateUI = (data) => {
     `
     icon.src = path_to_icon;
     if(isDayTime) {
-        time.src = "../Images/day.svg";
+        time.src = "./Images/day.svg";
     }
     else {
-        time.src = "../Images/night.svg";
+        time.src = "./Images/night.svg";
     }
 
     if(card.classList.contains("d-none")) {
