@@ -3,7 +3,7 @@ const key = 'IvL1hlPnFSVrBEGiTQKjAY3Jql7C0l6I';
 
 // get weather info
 const getWeather = async (id) => {
-    const base = "https://dataservice.accuweather.com/currentconditions/v1/"
+    const base = "https://dataservice.accuweather.com/currentconditions/v1/";
     const query = `${id}?apikey=${key}`;
 
     const response = await fetch(base + query);
@@ -25,13 +25,3 @@ const getCity = async (city) => {
     return data[0]; // returns a promise
 };
 
-
-// getCity("mumbai").then((data) => {
-//     // console.log(data);
-//     return getWeather(data.Key);
-// }).then((weatherData) => {
-//     const val = weatherData.Temperature.Metric.Value;
-//     // document.querySelector(".span_temp").textContent = val;
-// }).catch((err) => {
-//     console.log("Failed to fetch data");
-// });
