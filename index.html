@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container my-2 mx-auto main_wrapper">
+        <!-- heading and input box  -->
+        <h1 class="text-center my-4">My Weather App</h1>
+        <form class="change_location my-4 text-center">
+            <!-- <label for="city" class="text-muted my-2">Enter a city name for weather information</label> -->
+            <input type="text" class="form-control form-control-lg p-2 w-25 mx-auto text-muted input_location" name="city" placeholder="Enter city name" autocomplete="off">
+        </form>
+
+        <!-- card  -->
+        <div class="card shadow-lg rounded weather_info mx-auto d-none">
+            <div class="img_wrapper">
+                <img src="https://via.placeholder.com/400x300" class="time card-img-top">
+            </div>
+            
+            <div class="info_wrapper">
+                <div class="icon bg-light mx-auto text-center">
+                    <!-- icon  -->
+                    <img src="" alt="">
+                </div>
+                <div class="text-muted text-uppercase text-center details">
+                    <h5 class="my-3">City Name</h5>
+                    <div class="my-3">Weather Condition</div>
+                    <div class="display-4 my-4">
+                        <span class="span_temp">Temp</span>
+                        <span class="span_degree">&deg;C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- scripts -->
+    <script src="./scripts/forecast.js"></script>
+    <script src="./scripts/app.js"></script>
+
+</body>
+</html>
